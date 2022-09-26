@@ -8,6 +8,7 @@
 </head>
 <body>
     <table width="600" align="center">
+        <form method="GET">
         <tr>
             <td>
                 <h2>Tiramisu</h2>
@@ -16,7 +17,7 @@
             </p>
             </td>
             <td align="right">
-                <a href="https://amazon.com">Buy on Amazon!</a>
+                <a href="https://amazon.com">Buy on Amazon! </a>
             </td>
             
         </tr>
@@ -34,7 +35,7 @@
         
     
     </table>
-    <table width="600" align="center">
+        <table width="600" align="center">
         <tr>
             <td>
                 <p>
@@ -88,7 +89,66 @@
                         </dd>
             </td>
         </tr>
-    </table>
-    
+
+        <br /> <br />
+        <tr>
+            <td>
+                <fieldset>
+                    <legend><b>Porosit Me telefon</b></legend>
+                    
+                    <br />
+        
+                    <input type="tel" name="mob" placeholder="Nr. tel." required pattern="\d{9}" /> <br /><br />
+                    
+                    <input type="email" name="email" placeholder="Shkruaje email adresen" />
+
+                    <br /><br />
+        
+                    <textarea name="message" id="message" placeholder="Shkruani adresen tuaj" cols="20" rows="5"></textarea>
+        
+                    <br /><br />
+                    <input list="pagesa" placeholder="Pagesa" />
+                    <datalist id="pagesa">
+                        <option value="Kesh">Kesh</option>
+                        <option value="Kartel bankare">Kartel bankare</option>
+                        <option value="Bitkoin">Bitkoin</option>
+                    </datalist>
+        
+                    <br /><br />
+        
+                    <label for="categories">Cake Size</label>
+                    <select name="categories" id="categories" >
+                        <option value="">Small</option>
+                        <option value="">Medium</option>
+                        <option value="">Large</option>
+                    </select>
+                    <br /> <br />
+                    <label for="categories">Cake Type</label>
+                    <select name="categories" id="categories" >
+                        <option value="">With egg whites</option>
+                        <option value="">Whipped Cream</option>
+                        <option value="">Cooked eggs</option>
+                        <optgroup label="With Rum">
+                            <option value="">Dark rum</option>
+                            <option value="">Brandy</option>
+                            <option value="">Coffe liqueur</option>
+                        </optgroup>
+                    </select>
+                    <h3><b>Adresa jone</b></h3>    
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8368.877899568022!2d21.71311415950077!3d42.13219801270299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13544fc77a4ff3c7%3A0xc9a290fc410c5a55!2sRestaurant%20Arcus!5e0!3m2!1sen!2smk!4v1664222766812!5m2!1sen!2smk" width="400" height="300" style="border:0;" allowfullscreen="0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <br /><br />
+        
+                    <p>Permbushja kerkeses:</p>
+                    <progress id="prog" value="0" max="100"></progress>
+
+                    <br /> <br />
+                    <button type="reset" value="reset">Reset</button>
+                    <button type="submit" value="submit">Submit</button>
+                </fieldset>
+                
+            </td>
+        </tr>
+        </table>
+        </form>
 </body>
 </html>
